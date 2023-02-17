@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Calculadora de Peso de Peças</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+	</head>
+	<body>
+		<h1 class="titulo-principal">Calculadora de Peso de Peças</h1>
+		<div class="container">
+			<div class="form">
+				<h2>Chapa</h2>
+				<label for="chapa-comprimento">Comprimento (mm):</label>
+				<input type="number" id="chapa-comprimento">
+				<label for="chapa-largura">Largura (mm):</label>
+				<input type="number" id="chapa-largura">
+				<label for="chapa-espessura">Espessura (mm):</label>
+				<input type="number" id="chapa-espessura">
+				<label for="chapa-preco">Preço (opcional):</label>
+				<input type="number" id="chapa-preco">
+				<button id="chapa-calcular" >Calcular Peso</button>
+				<p id="chapa-peso" class="botao"></p>
+			</div>
+			<div class="form">
+				<h2>Redondo</h2>
+				<label for="tubo-diametro">Diâmetro (mm):</label>
+				<input type="number" id="tubo-diametro">			
+				<label for="tubo-comprimento">Comprimento (mm):</label>
+				<input type="number" id="tubo-comprimento">
+				<label for="tubo-preco">Preço (opcional):</label>
+				<input type="number" id="tubo-preco">
+				<button id="tubo-calcular">Calcular Peso</button>
+				<p id="tubo-peso" class="botao"></p>
+			</div>
+			<div class="resultado">
+				<p>Resultado Final:</p>
+				<p id="resultado" class="valor"></p>
+				<button id="limpar">Limpar campos</button>			
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="./calculo.js"></script>
+	</body>
+</html>
